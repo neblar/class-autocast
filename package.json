@@ -1,0 +1,53 @@
+{
+  "name": "class-autocast",
+  "version": "1.0.0",
+  "description": "Automatic creation of validated classes in TS/JS",
+  "type": "module",
+  "packageManager": "yarn@4.0.2",
+  "exports": {
+    ".": {
+      "require": "./index.umd.js",
+      "import": "./index.es.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build && cp package.json dist",
+    "lint-check": "eslint src",
+    "prettier-check": "prettier --check src"
+  },
+  "dependencies": {
+    "class-validator": "^0.14.1"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8",
+    "@typescript-eslint/eslint-plugin": "6.18.0",
+    "@typescript-eslint/parser": "6.18.0",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-import-resolver-typescript": "3.6.1",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-prettier": "5.1.2",
+    "eslint-plugin-spellcheck": "0.0.20",
+    "prettier": "3.1.1",
+    "typescript": "^5.2.2",
+    "vite": "5.0.12",
+    "vite-plugin-dts": "3.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neblar/class-autocast.git"
+  },
+  "keywords": [
+    "validator",
+    "typescript",
+    "autocast",
+    "autoclass"
+  ],
+  "author": "Neblar developers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neblar/class-autocast/issues"
+  },
+  "homepage": "https://github.com/neblar/class-autocast#readme"
+}

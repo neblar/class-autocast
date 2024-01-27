@@ -1,0 +1,20 @@
+{
+  "name": "class-autocast",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dev",
+  "workspaceFolder": "/home/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "gamunu.vscode-yarn",
+        "eamodio.gitlens",
+        "vscode-icons-team.vscode-icons",
+        "dbaeumer.vscode-eslint",
+        "hediet.vscode-drawio",
+        "arcanis.vscode-zipfs"
+      ]
+    }
+  },
+  "postCreateCommand": "yarn install"
+}

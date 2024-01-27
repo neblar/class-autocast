@@ -1,0 +1,57 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
+    "plugin:import/recommended"
+  ],
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": true,
+      "node": true
+    }
+  },
+  "plugins": ["@typescript-eslint", "import", "prettier", "spellcheck"],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }
+    ],
+    "prettier/prettier": ["error"],
+    "spellcheck/spell-checker": [
+      "warn",
+      {
+        "minLength": 3,
+        "lang": "en_AU",
+        "skipWords": [
+          "bool",
+          "enum",
+          "enums",
+          "metadatas",
+          "nocheck",
+          "passthrough"
+        ]
+      }
+    ]
+  }
+}
