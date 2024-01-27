@@ -1,6 +1,6 @@
 {
   "name": "class-autocast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatic creation of validated classes in TS/JS",
   "type": "module",
   "packageManager": "yarn@4.0.2",
@@ -16,7 +16,7 @@
     "lint-check": "eslint src",
     "prettier-check": "prettier --check src"
   },
-  "dependencies": {
+  "peerDependencies": {
     "class-validator": "^0.14.1"
   },
   "devDependencies": {
