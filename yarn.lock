@@ -1113,6 +1113,8 @@ __metadata:
     typescript: "npm:^5.2.2"
     vite: "npm:5.0.12"
     vite-plugin-dts: "npm:3.7.1"
+  peerDependencies:
+    class-validator: ^0.14.1
   languageName: unknown
   linkType: soft
 
