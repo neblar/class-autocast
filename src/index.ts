@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 /*  eslint-disable @typescript-eslint/ban-types */
 // @ts-nocheck
+import 'reflect-metadata';
 import {
   validateSync,
   getMetadataStorage,
