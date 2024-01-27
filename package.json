@@ -16,6 +16,9 @@
     "lint-check": "eslint src",
     "prettier-check": "prettier --check src"
   },
+  "dependencies": {
+    "class-validator": "^0.14.1"
+  },
   "peerDependencies": {
     "class-validator": "^0.14.1"
   },
