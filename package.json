@@ -1,6 +1,6 @@
 {
   "name": "class-autocast",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Automatic creation of validated classes in TS/JS",
   "type": "module",
   "packageManager": "yarn@4.0.2",
